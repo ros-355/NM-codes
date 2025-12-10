@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ----------------------
 # CHANGE YOUR FUNCTION HERE
 def f(x):
     return x**3 - x - 2
@@ -9,7 +8,6 @@ def f(x):
 # CHANGE derivative here
 def df(x):
     return 3*x**2 - 1
-# ----------------------
 
 def newton(x0, tol=1e-6, max_iter=50):
     for _ in range(max_iter):
@@ -18,9 +16,8 @@ def newton(x0, tol=1e-6, max_iter=50):
             break
         x0 = x1
 
-    print("Root (Newton–Raphson):", x1)
+    print("Root (Newton - Raphson):", x1)
 
-    # ---- Graph ----
     X = np.linspace(x1 - 2, x1 + 2, 400)
     Y = f(X)
 
@@ -38,4 +35,4 @@ def newton(x0, tol=1e-6, max_iter=50):
 
     return x1
 
-newton(1.5)
+newton(2)

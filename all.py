@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # USER FUNCTION (Replace here)
 def f(x):
-    return x**3 - x - 2    # example
+    return x**3 - x - 2    
 
 
 # BISECTION METHOD
@@ -118,10 +118,6 @@ def false_position(a, b, tol=1e-6, max_iter=20):
 
     return c
 
-
-# ======================================================
-# RUN
-# ======================================================
 root_bis  = bisection(1, 2)
 root_nr   = newton_raphson(1.5)
 root_fp   = false_position(1, 2)
